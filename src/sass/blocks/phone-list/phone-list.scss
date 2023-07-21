@@ -1,0 +1,31 @@
+.list {
+  padding-left: 0;
+  margin-bottom: 0;
+  &__item {
+    list-style-type: none;
+    margin-top: 37px;
+  }
+  &__item:first-child {
+    list-style-type: none;
+    margin-top: 0px;
+  }
+  &__link {
+    cursor: pointer;
+    padding-left: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__text {
+    margin-left: 8px;
+  }
+}

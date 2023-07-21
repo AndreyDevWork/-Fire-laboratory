@@ -1,0 +1,10 @@
+.link {
+  color: var(--accent-default-color);
+  text-decoration: none;
+  &:hover {
+    color: var(--accent-hover-color);
+  }
+  &:focus {
+    border: 2px solid rgba(226, 116, 16, 0.30);
+  }
+}

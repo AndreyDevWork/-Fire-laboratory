@@ -1,0 +1,103 @@
+.nav {
+  height: 154px;
+  padding: 70px 0 0 0;
+  background-color: var(--background-gray-color);
+  position: relative;
+  &__logo {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__logo-img {
+    height: 100%;
+    width: 100%;
+  }
+  &_logo-hide {
+    display: none;
+  }
+  &__logo-little {
+    display: none;
+  }
+
+  &__more {
+    display: none;
+  }
+  &__list {
+    height: 84px;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    column-gap: 64px;
+    align-items: center;
+  }
+  &__item {
+    font-weight: inherit;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__text {
+    &:hover {
+      color: var(--accent-hover-color);
+      &::before {
+        content: '';
+        position: absolute;
+        height: 12px;
+        width: 12px;
+        background-color: var(--accent-hover-color);
+        transform: rotate(45deg) translateX(-50%);
+        left: 50%;
+        top: -10px;
+      }
+    }
+  }
+
+  &__drop-down {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    transform: translateY(100%);
+    background-color: white;
+    cursor: default;
+    border-top: 2px solid var(--accent-hover-color);
+    border-radius: 2px;
+    width: 453px;
+    padding: 24px 0 24px 30px;
+    list-style-type: none;
+    overflow: hidden;
+    display: none;
+  }
+  &__drop-down_active {
+    display: block;
+  }
+  &__drop-item:not(:first-child) {
+    margin-top: 48px;
+  }
+  &__drop-item {
+    position: relative;
+    &:hover {
+      &::before {
+        position: absolute;
+        content: '';
+        height: 35px;
+        width: 35px;
+        background: var(--accent-hover-color);
+        color: var(--accent-hover-color);
+        transform: rotate(45deg) translateY(-65%);
+        border-radius: 4px;
+        left: -65px;
+        top: 50%;
+      }
+    }
+  }
+  &__drop-link {
+    &:hover {
+      color: var(--accent-hover-color);
+    }
+  }
+}

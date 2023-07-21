@@ -1,0 +1,11 @@
+@media (max-width: 1400px) {
+  .services {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      grid-template-rows: repeat(3, 260px);
+      margin-top: 48px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@media (max-width: 1400px) {
+  .team {
+    &__wrapper {
+      grid-template-columns: repeat(4, 310px);
+
+    }
+  }
+}

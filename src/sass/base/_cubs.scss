@@ -1,0 +1,87 @@
+.cube-blue {
+  width: 110px;
+  height: 110px;
+  background: var(--gradient-blue);
+  transform: rotate(45deg);
+  border-radius: 12px;
+  position: relative;
+  &::before {
+    content: '';
+    background: inherit;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    opacity: 0.3;
+    position: absolute;
+    right: 10%;
+  }
+  &::after {
+    content: '';
+    background: inherit;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    opacity: 0.15;
+    position: absolute;
+    right: 20%;
+  }
+}
+
+.cube-orange {
+  width: 110px;
+  height: 110px;
+  background: var(--accent-default-color);
+  transform: rotate(45deg);
+  border-radius: 12px;
+  position: relative;
+  &::before {
+    content: '';
+    background: inherit;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    opacity: 0.3;
+    position: absolute;
+    right: 10%;
+  }
+  &::after {
+    content: '';
+    background: inherit;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    opacity: 0.15;
+    position: absolute;
+    right: 20%;
+  }
+}
+
+.cube-orange-invert {
+  width: 110px;
+  height: 110px;
+  background: var(--accent-default-color);
+  transform: rotate(45deg);
+  border-radius: 8px;
+  position: relative;
+  &::before {
+    content: '';
+    background: inherit;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    opacity: 0.3;
+    position: absolute;
+    bottom: 10%;
+  }
+  &::after {
+    content: '';
+    background: inherit;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    opacity: 0.15;
+    position: absolute;
+    bottom: 20%;
+  }
+}
+

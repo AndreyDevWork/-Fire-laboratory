@@ -1,0 +1,15 @@
+@media (max-width: 1400px) {
+  .header {
+    &__wrapper {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: space-between;
+      padding-left: 62px;
+    }
+  }
+  .flex-one {
+    display: none;
+  }
+}

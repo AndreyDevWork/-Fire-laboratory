@@ -1,0 +1,51 @@
+.humburger {
+  width: 40px;
+  height: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  cursor: pointer;
+  transition: 0.4s all;
+  &__line {
+    background: var(--title-color);
+    height: 3px;
+    width: 100%;
+    border-radius: 4px;
+    transition: 0.4s all;
+  }
+  &__line-center {
+    background: var(--title-color);
+    height: 3px;
+    width: 100%;
+    border-radius: 4px;
+    display: none;
+  }
+  &__line_active {
+    display: block;
+  }
+  &_active {
+    display: flex;
+  }
+  &_focus {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    span {
+      background: var(--accent-hover-color);
+      height: 3px;
+      width: 100%;
+      border-radius: 4px;
+      position: absolute;
+    }
+    span:first-child {
+      rotate: 45deg;
+    }
+    span:last-child {
+      rotate: -45deg;
+    }
+    span:nth-child(2) {
+      rotate: -45deg;
+    }
+
+  }
+}

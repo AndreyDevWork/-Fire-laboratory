@@ -1,0 +1,13 @@
+.dropdown {
+  list-style-type: none;
+  padding-left: 8px;
+  transition: 0.4s all;
+  &__item {
+    margin-top: 16px;
+  }
+  &__link {
+    &:hover {
+      color: var(--accent-hover-color);
+    }
+  }
+}

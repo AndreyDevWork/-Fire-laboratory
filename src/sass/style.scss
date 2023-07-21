@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+@import 'libs/bootstrap-reboot.min.scss';
+
+@import 'base/mixins.scss';
+@import 'base/variables.scss';
+@import 'base/titles';
+@import 'base/checkbox';
+@import 'base/link';
+@import 'base/buttons';
+@import 'base/cubs';
+@import 'base/inputs';
+
+* {
+  font-family: 'inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+body {
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+address {
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1320px;
+  margin: auto;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 320px;
+  }
+}
+
+
+
+@import 'blocks/header/header';
+@import 'blocks/header/media';
+
+
+@import 'blocks/humburger/humburger';
+
+
+
+@import 'blocks/aside/aside';
+
+
+@import 'blocks/nav/nav';
+@import 'blocks/nav/media';
+
+
+@import 'blocks/main/main';
+@import 'blocks/main/media';
+
+
+@import 'blocks/services/services';
+@import 'blocks/services/media';
+
+
+@import 'blocks/register/register';
+
+
+@import 'blocks/team/team';
+@import 'blocks/team/media';
+
+
+@import 'blocks/ask/ask';
+@import 'blocks/ask/media';
+
+
+
+@import 'blocks/phone-list/phone-list.scss';
+
+
+@import 'blocks/footer/footer';
+@import 'blocks/footer/media';
+
+
+@import 'blocks/safety/safety';
+
+
+@import 'blocks/dropdown/dropdown';

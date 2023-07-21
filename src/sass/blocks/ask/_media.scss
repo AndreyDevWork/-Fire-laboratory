@@ -1,0 +1,22 @@
+@media (max-width: 1400px) {
+  .ask {
+    &__form {
+      grid-template-columns: repeat(2, 240px);
+    }
+    &__safety {
+      margin-top: -2px;
+    }
+    &__title {
+      width: 100%;
+    }
+    &__your {
+      width: 400px;
+    }
+    &__list {
+      margin-top: 120px;
+    }
+    &__phone-wrapper {
+      width: 320px;
+    }
+  }
+}

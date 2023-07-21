@@ -1,0 +1,48 @@
+.footer {
+  margin-top: 143px;
+  display: flex;
+  justify-content: center;
+  background: var(--background-gray-color);
+  position: relative;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &__contacts {
+    width: 100%;
+    height: 600px;
+    padding: 65px 0px 49px 0px;
+  }
+  &__wrapper-address {
+    margin-top: 57px;
+    display: grid;
+    grid-template-columns: repeat(2, 237px);
+    column-gap: 100px;
+    row-gap: 60px;
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  &__p7 {
+    margin-left: 8px;
+  }
+  &__text {
+    margin-top: 17px;
+  }
+
+  &__list {
+    margin-top: 20px;
+  }
+  &__list-item {
+    margin-top: 16px;
+  }
+
+  &__card {
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    right: 0;
+  }
+}

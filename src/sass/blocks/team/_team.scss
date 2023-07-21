@@ -1,0 +1,42 @@
+.team {
+  padding: 145px 0 141px 0;
+  &__title {
+    text-align: center;
+  }
+  &__wrapper {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(4, 470px);
+    overflow: auto;
+    gap: 14px;
+    margin-top: 65px;
+  }
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+  }
+  &__photo-gallary {
+    object-fit: contain;
+    width: 100%;
+  }
+  &__holder {
+    grid-row: 1 / 3;
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+  }
+  &__to-gallery {
+    position: relative;
+  }
+  &__button {
+    position: absolute;
+    width: 260px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}

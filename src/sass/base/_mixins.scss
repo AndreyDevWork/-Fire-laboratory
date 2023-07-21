@@ -1,0 +1,14 @@
+@mixin button {
+  border-radius: 4px;
+  background: var(--accent-default-color);
+  padding: 8px 24px;
+  &:hover {
+    color: var(--accent-default-color);
+  }
+  &:active {
+    color: var(--accent-hover-color);
+  }
+  &:focus {
+    border: 2px solid #E5C4A6;
+  }
+}

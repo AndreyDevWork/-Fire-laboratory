@@ -1,0 +1,40 @@
+.button {
+  border-radius: 4px;
+  background: var(--accent-default-color);
+  padding: 8px 24px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  &:hover {
+    background: var(--accent-hover-color);
+  }
+  &:active {
+    background: var(--accent-hover-color);
+  }
+  &:focus {
+    border: 2px solid #E5C4A6;
+  }
+}
+
+.button__white {
+  border-radius: 4px;
+  background: white;
+  padding: 8px 24px;
+  color: var(--text-color);
+  background: none;
+  cursor: pointer;
+  border: 2px solid var(--accent-default-color);
+  color: var(--text-color);
+  display: inline-block;
+  &:hover {
+    border: 2px solid var(--accent-hover-color);
+    color: var(--accent-hover-color);
+  }
+  &:active {
+    border: 2px solid var(--accent-hover-color);
+    color: var(--accent-hover-color);
+  }
+  &:focus {
+    border: 2px solid #E5C4A6;
+  }
+}

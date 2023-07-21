@@ -1,0 +1,41 @@
+.header {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  background-color: var(--background-gray-color);
+  z-index: 4;
+  &__humburger {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__wrapper {
+    height: 70px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 40px;
+  }
+  &__link {
+    text-decoration: none;
+    &:hover {
+      color: var(--accent-hover-color);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  &__icon {
+    display: inline;
+    margin-right: 8px;
+  }
+  &__phone {
+    background: none;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+  &__phone-link {
+    text-decoration: none;
+  }
+}

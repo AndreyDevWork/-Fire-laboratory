@@ -1,0 +1,54 @@
+.ask {
+  background: var(--gradient-blue);
+  &__wrapper {
+    padding: 56px 0 95px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__line {
+    height: 487px;
+    width: 3px;
+    background: white;
+    opacity: 0.1;
+  }
+  &__title {
+    color: white;
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 370px);
+    grid-template-rows: repeat(3, 48px);
+    gap: 24px;
+    margin-top: 56px;
+  }
+  &__texarea {
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+  }
+  &__safety {
+    color: white;
+    margin-top: 4px;
+  }
+  &__wrapper-label {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    color: var(--accent-default-color);
+    &:hover {
+      color: var(--accent-hover-color);
+    }
+  }
+
+  &__list {
+    margin-top: 54px;
+  }
+
+  &__p7 {
+    color: white;
+  }
+  &__p2 {
+    color: white;
+  }
+}

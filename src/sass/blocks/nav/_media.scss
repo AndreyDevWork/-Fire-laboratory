@@ -1,0 +1,27 @@
+@media (max-width: 1400px) {
+  .nav {
+    &__list {
+      justify-content: space-between;
+      padding-left: 60px;
+    }
+    &__logo {
+      display: none;
+    }
+    &__logo-little {
+      height: 64px;
+      width: 64px;
+      display: block;
+
+    }
+    &__list {
+      column-gap: 42px;
+    }
+    &__more {
+      display: block;
+    }
+    &__more-hide {
+      display: none;
+    }
+
+  }
+}
