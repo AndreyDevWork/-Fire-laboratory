@@ -13,3 +13,58 @@
     display: none;
   }
 }
+
+@media (max-width: 992px) {
+  .header {
+    &__glasses {
+      padding: 2px;
+      border: 1px solid var(--accent-default-color);
+    }
+    &__glasses-text {
+      display: none;
+    }
+    &__icon-glasses {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__icon-phone {
+      display: none;
+    }
+    &__phone-mob {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+    }
+    &__link {
+      display: none;
+    }
+    &__link-btn-text {
+      display: none;
+    }
+    &__wrapper {
+      display: grid;
+      grid-template-rows: 48px;
+      grid-template-columns: 48px calc(100% - 48px - 32px - 32px - 24px - 24px - 24px) 32px 32px;
+      align-items: center;
+      margin-top: 10px;
+      gap: 24px;
+    }
+    &__grid-to {
+      grid-column: 3/3;
+      height: 32px;
+    }
+    &__logo-img {
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+  }
+  #logo {
+    display: block;
+  }
+}

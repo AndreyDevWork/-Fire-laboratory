@@ -2,7 +2,7 @@
   &__nav {
     height: 100vh;
     width: 520px;
-    left: -720px;
+    left: -520px;
     z-index: 3;
     background: white;
     position: fixed;
@@ -10,7 +10,7 @@
   }
   &__nav_active {
     left: 0;
-    padding: 70px 48px 0px 0px;
+    padding: 70px 48px 0px 48px;
   }
   &__overlay {
     height: 100vh;
@@ -24,11 +24,11 @@
     left: 0;
   }
   &__wrapper {
-    padding-left: 48px;
     margin-top: 54px;
     height: calc(100vh - 70px);
   }
   &__logo {
+    display: block;
     width: 122px;
   }
   &__menu {
@@ -46,6 +46,9 @@
     &:hover {
       color: var(--accent-hover-color);
     }
+  }
+  &__logo-img {
+    width: 100%;
   }
   &__text {
     color: inherit;

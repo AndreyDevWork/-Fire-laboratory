@@ -15,17 +15,22 @@
         <span class="humburger__line"></span>
       </div>
       <div class="header__wrapper">
+        <a id="logo" href="#" class="header__logo"><img class="header__logo-img" src="img/logo.svg" alt="logo"></a>
         <a href="#" class="header__link p6">МЧС России</a>
         <a href="#" class="header__link p6">ГУ МЧС России</a>
         <a href="#" class="header__link p6">ИЦЭП МЧС России</a>
         <div class="flex-one"></div>
-        <button class="header__glasses button__white p6">
-          <img class="header__icon " src="icons/glasses.svg" alt="glasses">
-          Версия для слабовидящих
+        <button class="header__glasses header__grid-to button__white p6">
+          <img class="header__icon header__icon-glasses " src="icons/glasses.svg" alt="glasses">
+          <div class="header__glasses-text">Версия для слабовидящих</div>
         </button>
         <button class="header__phone">
-          <a class="header__link p4" href="tel:+73833359939"><img class="header__icon" src="icons/phone.svg" alt="phone"></a>
-          <a class="header__link p4" href="tel:+73833359939">+7 (383) 335-99-39</a>
+          <a class="header__link-btn p4" href="tel:+73833359939"><img class="header__icon header__icon-phone" src="icons/phone.svg" alt="phone">
+          <div class="header__glasses header__phone-mob button__white p6">
+            <img class="header__icon header__icon-glasses " src="icons/phone--.svg" alt="glasses">
+          </div>
+          </a>
+          <a class="header__link-btn header__link-btn-text p4" href="tel:+73833359939">+7 (383) 335-99-39</a>
         </button>
       </div>
     </div>
@@ -37,7 +42,7 @@
     <div class="aside__overlay"></div>
     <div class="aside__nav">
       <div class="aside__wrapper">
-        <a href="#" class="aside__logo"><img src="img/logo.svg" alt="logo"></a>
+        <a href="#" class="aside__logo"><img class="aside__logo-img" src="img/logo.svg" alt="logo"></a>
         <ul class="aside__menu">
           <li class="aside__item aside__item-with">
             <div class="aside__item-menu">
@@ -63,16 +68,8 @@
           <li class="aside__item aside__item-with">
             <div class="aside__item-menu">
               <div class="aside__text p2">Услуги</div>
-              <img src="icons/plus.svg" alt="plus" class="aside__plus aside__img">
-              <img src="icons/minus.svg" alt="plus" class="aside__minus aside__img aside_hiden">
             </div>
-            <ul class="dropdown aside_hiden">
-              <li class="dropdown__item"><a class="dropdown__link p4" href="#">Определение соответствия проектной документации в области ПБ</a></li>
-              <li class="dropdown__item"><a class="dropdown__link p4" href="#">Экспертные исследования</a></li>
-              <li class="dropdown__item"><a class="dropdown__link p4" href="#">Испытания веществ и материалов</a></li>
-              <li class="dropdown__item"><a class="dropdown__link p4" href="#">Испытание систем противопожарной защиты</a></li>
-              <li class="dropdown__item"><a class="dropdown__link p4" href="#">Сертификационные испытания</a></li>
-            </ul>
+
           </li>
           <li class="aside__item">
             <div class="aside__item-menu">
@@ -125,7 +122,7 @@
             <li class="nav__drop-item"><a class="nav__drop-link p3" href="#">Сертификационные испытания</a></li>
           </ul>
         </li>
-        <li class="nav__item">
+        <li class="nav__item nav__more-hide2">
           <div class="nav__text p2">Антикоррупция</div>
         </li>
         <li class="nav__more">
@@ -151,13 +148,13 @@
 
       <div class="main__items">
         <div class="main__item">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="main__svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M45.6 7.2H35.2V4C35.1973 1.7918 33.4082 0.00273438 31.2 0H16.8C14.5918 0.00273438 12.8027 1.7918 12.8 4V7.2H2.4C1.07461 7.2 0 8.27461 0 9.6V27.4078C0.00507812 28.4227 0.644531 29.3254 1.6 29.6664V40.8C1.6 42.1254 2.67461 43.2 4 43.2H44C45.3254 43.2 46.4 42.1254 46.4 40.8V29.6672C47.3555 29.3258 47.9953 28.4227 48 27.4078V9.6C48 8.27461 46.9254 7.2 45.6 7.2ZM14.4 4C14.4 2.67461 15.4746 1.6 16.8 1.6H31.2C32.5254 1.6 33.6 2.67461 33.6 4V7.2H32V4C32 3.5582 31.6418 3.2 31.2 3.2H16.8C16.3582 3.2 16 3.5582 16 4V7.2H14.4V4ZM30.4 7.2H17.6V4.8H30.4V7.2ZM44.8 40.8C44.8 41.2418 44.4418 41.6 44 41.6H4C3.5582 41.6 3.2 41.2418 3.2 40.8V29.9414L20.8 32.3688V34.4C20.8 35.7254 21.8746 36.8 23.2 36.8H24.8C26.1254 36.8 27.2 35.7254 27.2 34.4V32.3688L44.8 29.9414V40.8ZM25.6 34.4C25.6 34.8418 25.2418 35.2 24.8 35.2H23.2C22.7582 35.2 22.4 34.8418 22.4 34.4V29.6C22.4 29.1582 22.7582 28.8 23.2 28.8H24.8C25.2418 28.8 25.6 29.1582 25.6 29.6V34.4ZM46.4 27.4078C46.4004 27.8066 46.107 28.1449 45.7121 28.2008L45.4902 28.2313L27.2 30.7535V29.6C27.2 28.2746 26.1254 27.2 24.8 27.2H23.2C21.8746 27.2 20.8 28.2746 20.8 29.6V30.7535L2.28867 28.2008C1.89375 28.1453 1.59961 27.807 1.6 27.4078V9.6C1.6 9.1582 1.9582 8.8 2.4 8.8H45.6C46.0418 8.8 46.4 9.1582 46.4 9.6V27.4078Z" fill="#E27410"/>
           </svg>   
-          <div class="p3">Работаем <br> с 1957 года</div>
+          <div class="p3 main__p3">Работаем <br> с 1957 года</div>
         </div>
         <div class="main__item">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="main__svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_22_146)">
             <path d="M24.2599 17.0161H6.26138C5.87307 17.0161 5.55835 17.3309 5.55835 17.7191C5.55835 18.1075 5.87307 18.4222 6.26138 18.4222H24.26C24.6483 18.4222 24.963 18.1074 24.963 17.7191C24.963 17.3309 24.6483 17.0161 24.2599 17.0161Z" fill="#E27410"/>
             <path d="M24.2599 21.9561H6.26138C5.87307 21.9561 5.55835 22.2709 5.55835 22.6591C5.55835 23.0473 5.87307 23.3621 6.26138 23.3621H24.26C24.6483 23.3621 24.963 23.0473 24.963 22.6591C24.963 22.2709 24.6483 21.9561 24.2599 21.9561Z" fill="#E27410"/>
@@ -176,10 +173,10 @@
             </defs>
           </svg>
             
-          <div class="p3">Качество проверенное <br> временем</div>
+          <div class="p3 main__p3">Качество проверенное <br> временем</div>
         </div>
         <div class="main__item">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="main__svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_22_154)">
             <path d="M48 3.8005V2.52344C48 1.18722 46.9129 0.100098 45.5767 0.100098H2.42334C1.08713 0.100098 0 1.18722 0 2.52344V3.8006C0 4.92475 0.7695 5.87247 1.80947 6.145V39.6478C0.7695 39.9202 0 40.8679 0 41.992V45.4755C0 46.8117 1.08713 47.8988 2.42334 47.8988H11.2448C11.6321 47.8988 13.5 47.6372 13.5 47.2498C13.5 46.8623 11.6322 46.4958 11.2448 46.4958H2.42334C1.86075 46.4958 1.40297 46.0382 1.40297 45.4755V41.992C1.40297 41.4293 1.86075 40.9716 2.42334 40.9716H2.511H45.489H45.5767C46.1393 40.9716 46.597 41.4293 46.597 41.992V45.4755C46.597 46.0382 46.1393 46.4958 45.5767 46.4958H11.2448C10.8574 46.4958 12.75 46.8099 12.75 47.1973C12.75 47.5848 10.8573 47.8988 11.2448 47.8988H45.5767C46.9129 47.8988 48 46.8117 48 45.4755V41.992C48 40.8679 47.2304 39.9201 46.1904 39.6476V6.14491C47.2304 5.87247 48 4.92475 48 3.8005ZM1.40297 3.8005V2.52344C1.40297 1.96075 1.86075 1.50307 2.42334 1.50307H45.5767C46.1393 1.50307 46.597 1.96075 46.597 2.52344V3.8006C46.597 4.36329 46.1393 4.82097 45.5767 4.82097H45.489H32.0154H32.0135H2.511H2.42334C1.86075 4.82088 1.40297 4.36319 1.40297 3.8005ZM26.0163 24.1332C24.7484 24.3364 23.6597 25.0814 22.9942 26.122C22.3287 25.0815 21.2399 24.3364 19.972 24.1332V6.22385H26.0163V24.1332ZM26.7178 25.4799C28.3799 25.4799 29.7323 26.8322 29.7323 28.4944C29.7323 30.1565 28.38 31.5087 26.7178 31.5087C25.0557 31.5087 23.7035 30.1565 23.7035 28.4944C23.7035 26.8322 25.0557 25.4799 26.7178 25.4799ZM12.5248 24.1332V6.22385H18.5691V24.1332C17.3012 24.3364 16.2124 25.0814 15.5469 26.122C14.8815 25.0815 13.7927 24.3364 12.5248 24.1332ZM14.8376 28.4943C14.8376 30.1564 13.4855 31.5086 11.8233 31.5086C10.1611 31.5086 8.80894 30.1564 8.80894 28.4943C8.80894 26.8321 10.1612 25.4798 11.8233 25.4798C13.4854 25.4798 14.8376 26.8322 14.8376 28.4943ZM19.2706 25.4799C20.9327 25.4799 22.2849 26.8322 22.2849 28.4944C22.2849 30.1565 20.9328 31.5087 19.2706 31.5087C17.6085 31.5087 16.2562 30.1565 16.2562 28.4944C16.2562 26.8322 17.6085 25.4799 19.2706 25.4799ZM4.72069 39.5688H3.21244V6.22385H4.72069V39.5688ZM44.7875 39.5688H43.2792V9.74976C43.2792 9.36229 42.9652 12.5769 42.5777 12.5769C42.1902 12.5769 41.8762 12.891 41.8762 13.2783V39.5688H6.12366V6.22385H11.1218V24.1332C9.01838 24.4703 7.40597 26.2972 7.40597 28.4943C7.40597 30.9299 9.38756 32.9116 11.8233 32.9116C13.3865 32.9116 14.7616 32.0946 15.5469 30.866C16.3323 32.0946 17.7074 32.9116 19.2706 32.9116C20.8338 32.9116 22.2089 32.0946 22.9943 30.866C23.7796 32.0946 25.1547 32.9116 26.7178 32.9116C29.1536 32.9116 31.1352 30.93 31.1352 28.4943C31.1352 26.2972 29.5228 24.4703 27.4193 24.1332V6.22385H31.4221L34.8358 24.2855C33.0538 24.8547 31.7594 26.5259 31.7594 28.4943C31.7594 30.9299 33.741 32.9116 36.1767 32.9116C38.6124 32.9116 40.594 30.93 40.594 28.4943C40.594 26.0745 38.638 24.1039 36.2243 24.0781L32.8498 6.22385H41.8763V13.4998C41.8763 13.8872 42.1903 13.4998 42.5778 13.4998C42.9652 13.4998 43.2793 13.8872 43.2793 13.4998V6.22385H44.7876L44.7875 39.5688ZM36.1767 25.4799C37.8388 25.4799 39.1911 26.8322 39.1911 28.4944C39.1911 30.1565 37.8388 31.5087 36.1767 31.5087C34.5146 31.5087 33.1624 30.1565 33.1624 28.4944C33.1624 26.8322 34.5146 25.4799 36.1767 25.4799Z" fill="#E27410"/>
             </g>
@@ -189,7 +186,7 @@
             </clipPath>
             </defs>
           </svg>        
-          <div class="p3">Современное испытательное <br> оборудование</div>
+          <div class="p3 main__p3">Современное испытательное <br> оборудование</div>
         </div>
       </div>
     </div>
@@ -204,7 +201,7 @@
       <div class="services__wrapper">
         <div class="services__card">
           <p class="p1 services__p">Определение <br> соответствия проектной документациив <br> области ПБ</p>
-          <img class="services__icon"  src="icons/documents_white_big.svg" alt="document">
+          <img class="services__icon services__icon-big"  src="icons/documents_white_big.svg" alt="document">
           <div class="cube-orange services__cube-big"></div>
         </div>
         
@@ -293,24 +290,31 @@
           <h2 class="ask__title ask__your">Задайте свой вопрос</h2>
           <form  class="ask__form" action="">
             <input required name="name" placeholder="Имя" type="text">
-            <textarea required name="comment" placeholder="Комментарий..." class="ask__texarea" name="" id="" cols="30" rows="10"></textarea>
-            <input required name="phone" placeholder="Телефон" type="tel"">
-            <input required name="email" placeholder="Email" type="email">
-            <div class="ask__wrapper-label">
-              <label  class="control control-checkbox ask__label" for="safety">
-                <p class="p7 ask__safety">Я согласен на обработку <span><a class="ask__link" href="#">персональных данных</a></span></p>
-                <input id="safety" name="safety" type="checkbox" checked="checked" />
-                <div class="control_indicator"></div>
-              </label> 
+            <textarea class="ask__texarea" required name="comment" placeholder="Комментарий..." class="ask__texarea" name="" id="" cols="30" rows="10"></textarea>
+            <input class="ask__phone" required name="phone" placeholder="Телефон" type="tel"">
+            <input class="ask__email" required name="email" placeholder="Email" type="email">
+            <div class="ask__block">
+              <div class="ask__wrapper-label">
+                <label  class="control control-checkbox ask__label" for="safety">
+                  <p class="p7 ask__safety">
+                    Я согласен на обработку 
+                    <span>
+                      <a class="ask__link" href="#">персональных данных</a>
+                    </span>
+                  </p>
+                  <input id="safety" name="safety" type="checkbox" checked="checked" />
+                  <div class="control_indicator"></div>
+                </label> 
+              </div>
+              <button class="ask__button button">Отправить</button>
             </div>
-            <button class="button">Отправить</button>
           </form>
         </div>
         <div class="ask__line"></div>
         <div class="ask__phone-wrapper">
           <h2 class="ask__title">Позвоните</h2>
           <ul class="list ask__list">
-            <li class="list__item">
+            <li class="list__item ask__list-item">
               <a class="list__link" href="tel:+73833359904">
                 <div class="list__icon">
                   <img src="icons/phone.svg" alt="phone">
@@ -321,7 +325,7 @@
                 </div>
               </a>
             </li>
-            <li class="list__item">
+            <li class="list__item ask__list-item">
               <a class="list__link" href="tel:+73833359603">
                 <div class="list__icon">
                   <img src="icons/phone.svg" alt="phone">
@@ -332,7 +336,7 @@
                 </div>
               </a>
             </li>
-            <li class="list__item">
+            <li class="list__item ask__list-item">
               <a class="list__link" href="tel:+73833359939">
                 <div class="list__icon">
                   <img src="icons/phone.svg" alt="phone">
@@ -350,87 +354,88 @@
   </section>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container footer__container">
       <div class="footer__wrapper">
-        <div class="footer__contacts">
-          <h2>Контакты</h2>
-          <div class="footer__wrapper-address">
-            <address>
-              <div class="footer__icon">
-                <img src="icons/phone.svg" alt="phone">
-                <div class="p4 footer__p7">Лаборатория</div>
+        <div class="container">
+          <div class="footer__contacts">
+            <h2>Контакты</h2>
+            <div class="footer__wrapper-address">
+              <address>
+                <div class="footer__icon">
+                  <img src="icons/phone.svg" alt="phone">
+                  <div class="p4 footer__p7">Адресс</div>
+                </div>
+                <div class="footer__text p2">
+                  630060, г. Новосибирск, ул.Зеленая Горка,12.
+                </div>
+              </address>
+              <div>
+                <div class="footer__icon">
+                  <img src="icons/mail.svg" alt="mail">
+                  <div class="p4 footer__p7">E-mail</div>
+                </div>
+                <div class="footer__text p2">
+                  IPL@54.mchs.gov.ru
+                </div>
               </div>
-              <div class="footer__text p2">
-                630060, г. Новосибирск, ул.Зеленая Горка,12.
+              <div>
+                <div class="footer__icon">
+                  <img src="icons/mail.svg" alt="mail">
+                  <div class="p4 footer__p7">Телефоны</div>
+                </div>
+                <ul class="footer__list list">
+                  <li class="list__item footer__list-item">
+                    <a class="list__link" href="tel:+73833359904">
+                      <div>
+                        <div class="p7 list__p7">Лаборатория</div>
+                        <div class="p2 list__p2">(383) 335-99-04</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list__item footer__list-item">
+                    <a class="list__link" href="tel:+73833359603">
+                      <div>
+                        <div class="p7 list__p7">Судебная экспертиза</div>
+                        <div class="p2 list__p2">(383) 335-96-03</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list__item footer__list-item">
+                    <a class="list__link" href="tel:+73833359939">
+                      <div>
+                        <div class="p7 list__p7">Секретарь</div>
+                        <div class="p2 list__p2">(383) 335-99-39</div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
               </div>
-            </address>
-            <div>
-              <div class="footer__icon">
-                <img src="icons/mail.svg" alt="mail">
-                <div class="p4 footer__p7">E-mail</div>
-              </div>
-              <div class="footer__text p2">
-                IPL@54.mchs.gov.ru
-              </div>
-            </div>
-    
-            <div>
-              <div class="footer__icon">
-                <img src="icons/mail.svg" alt="mail">
-                <div class="p4 footer__p7">Телефоны</div>
-              </div>
-              <ul class="footer__list list">
-                <li class="list__item footer__list-item">
-                  <a class="list__link" href="tel:+73833359904">
+              <div>
+                <div class="footer__icon">
+                  <img src="icons/mail.svg" alt="mail">
+                  <div class="p4 footer__p7">Приём посетителей</div>
+                </div>
+                <ul class="footer__list list">
+                  <li class="list__item footer__list-item">
                     <div>
-                      <div class="p7 list__p7">Лаборатория</div>
-                      <div class="p2 list__p2">(383) 335-99-04</div>
+                      <div class="p7 list__p7">Пн—Чт</div>
+                      <div class="p2 list__p2">9:00-18:00</div>
                     </div>
-                  </a>
-                </li>
-                <li class="list__item footer__list-item">
-                  <a class="list__link" href="tel:+73833359603">
+                  </li>
+                  <li class="list__item footer__list-item">
                     <div>
-                      <div class="p7 list__p7">Судебная экспертиза</div>
-                      <div class="p2 list__p2">(383) 335-96-03</div>
+                      <div class="p7 list__p7">Пт</div>
+                      <div class="p2 list__p2">9:00-16:45</div>
                     </div>
-                  </a>
-                </li>
-                <li class="list__item footer__list-item">
-                  <a class="list__link" href="tel:+73833359939">
+                  </li>
+                  <li class="list__item footer__list-item">
                     <div>
-                      <div class="p7 list__p7">Секретарь</div>
-                      <div class="p2 list__p2">(383) 335-99-39</div>
+                      <div class="p7 list__p7">Обед</div>
+                      <div class="p2 list__p2">13:00-13:45</div>
                     </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <div class="footer__icon">
-                <img src="icons/mail.svg" alt="mail">
-                <div class="p4 footer__p7">Приём посетителей</div>
+                  </li>
+                </ul>
               </div>
-              <ul class="footer__list list">
-                <li class="list__item footer__list-item">
-                  <div>
-                    <div class="p7 list__p7">Пн—Чт</div>
-                    <div class="p2 list__p2">9:00-18:00</div>
-                  </div>
-                </li>
-                <li class="list__item footer__list-item">
-                  <div>
-                    <div class="p7 list__p7">Пт</div>
-                    <div class="p2 list__p2">9:00-16:45</div>
-                  </div>
-                </li>
-                <li class="list__item footer__list-item">
-                  <div>
-                    <div class="p7 list__p7">Обед</div>
-                    <div class="p2 list__p2">13:00-13:45</div>
-                  </div>
-                </li>
-              </ul>
             </div>
           </div>
         </div>

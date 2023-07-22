@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  .safety {
+    height: 126px;
+    &__wrapper {
+      flex-direction: column;
+      row-gap: 11px;
+    }
+  }
+}

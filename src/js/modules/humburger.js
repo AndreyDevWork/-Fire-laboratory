@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const logoNav = document.querySelector('.nav__logo');
   const asideNav = document.querySelector('.aside__nav');
 
+
   if(window.scrollY > 110) {
     humburger.classList.add('humburger_active');
   }

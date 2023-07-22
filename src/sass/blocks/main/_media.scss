@@ -8,3 +8,48 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .main {
+    &__svg {
+      width: 24px;
+      height: 24px;
+    }
+    &__item:nth-child(1) {
+      width: 152px;
+    }
+    &__item:nth-child(2) {
+      width: 234px;
+    }
+    &__item:nth-child(3) {
+      width: 279px;
+    }
+    &__item {
+      height: 66px;
+      padding: 14px 16px 16px 16px;
+      grid-template-columns: 24px calc(100% - 24px - 16px);
+      align-items: center;
+    }
+    &__p3 {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    &__header {
+      width: 100%;
+    }
+    &__items   {
+      flex-direction: column;
+      margin-top: 72px;
+      row-gap: 8px;
+    }
+    &__item:nth-child(n) {
+      width: 100%;
+    }
+
+  }
+}

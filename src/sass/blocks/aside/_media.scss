@@ -1,0 +1,44 @@
+@media (max-width: 992px) {
+  .aside {
+    &__wrapper {
+      margin-top: 16px;
+      
+    }
+    &__logo {
+      width: 74px;
+    }
+    &__nav {
+      width: 480px;
+    }
+    &__menu {
+      margin-top: 0px;
+      height: calc(100% - 100px);
+    }
+    &__item {
+      margin-top: 8px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .aside {
+    &__nav {
+      width: 320px;
+      left: -320px;
+    }
+    &__nav_active {
+      left: 0;
+    }
+    &__logo {
+      display: none;
+      width: 122px;
+    }
+    &__menu {
+      margin-top: 0px;
+      height: 100%;
+    }
+    &__nav_active {
+      padding: 70px 16px 0px 16px;
+    }
+  }
+}

@@ -5,7 +5,7 @@ let path = require('path');
 module.exports = {
   mode: 'development', // режим в котором будет работать веб пак (девелопмент, продакшн)
   entry: {
-    main: ['./js/modules/humburger.js', './js/modules/cards.js', './js/modules/aside.js', './js/modules/nav.js',],
+    main: ['./js/modules/humburger.js', './js/modules/cards.js', './js/modules/aside.js', './js/modules/nav.js', './js/modules/header.js'],
   },
   output: {
     filename: 'bundle.js',

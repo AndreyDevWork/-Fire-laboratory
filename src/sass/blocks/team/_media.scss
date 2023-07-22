@@ -2,7 +2,33 @@
   .team {
     &__wrapper {
       grid-template-columns: repeat(4, 310px);
-
     }
+  }
+}
+
+@media (max-width: 992px) {
+  .team {
+    &__wrapper {
+      grid-template-columns: repeat(4, 230px);
+      gap: 8px;
+      margin-top: 32px;
+    }
+    &__button {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .team {
+    &__wrapper {
+      grid-template-columns: repeat(4, 140px);
+      gap: 4px;
+      margin-top: 24px;
+    }
+    &__button {
+      width: 100%;
+      height: 100%;
+  }
   }
 }

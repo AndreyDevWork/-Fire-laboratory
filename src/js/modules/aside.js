@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const asideItem = document.querySelectorAll('.aside__item-with');
+  const asideItems = document.querySelectorAll('.aside__item-with');
 
-  asideItem.forEach(item => {
+  asideItems.forEach(item => {
     const dropdown = item.querySelector('.dropdown');
     const plus = item.querySelector('.aside__plus');
     const minus = item.querySelector('.aside__minus');

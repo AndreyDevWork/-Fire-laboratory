@@ -16,6 +16,13 @@
     align-items: center;
     gap: 40px;
   }
+  &__glasses {
+    display: flex;
+    align-items: center;
+  }
+  &__phone-mob {
+    display: none;
+  }
   &__link {
     text-decoration: none;
     &:hover {
@@ -24,8 +31,27 @@
       cursor: pointer;
     }
   }
+  &__logo {
+    display: none;
+  }
+  &__logo-img {
+    height: 100%;
+    width: 100%;
+    display: none;
+  }
+  &__link_hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  &__link-btn {
+    text-decoration: none;
+    &:hover {
+      color: var(--accent-hover-color);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
   &__icon {
-    display: inline;
     margin-right: 8px;
   }
   &__phone {

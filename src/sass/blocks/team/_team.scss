@@ -8,19 +8,21 @@
     width: 100%;
     justify-content: center;
     grid-template-columns: repeat(4, 470px);
-    overflow: auto;
+    overflow: hidden;
     gap: 14px;
-    margin-top: 65px;
+    margin-top: 64px;
   }
   &__photo {
     width: 100%;
     height: 100%;
+    border-radius: 4px;
     object-fit: cover;
     aspect-ratio: 1 / 1;
   }
   &__photo-gallary {
     object-fit: contain;
     width: 100%;
+    border-radius: 4px;
   }
   &__holder {
     grid-row: 1 / 3;

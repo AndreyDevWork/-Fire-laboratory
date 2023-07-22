@@ -54,6 +54,7 @@ address {
 }
 @media (max-width: 768px) {
   .container {
+    padding: 0 16px;
     width: 320px;
   }
 }
@@ -65,10 +66,12 @@ address {
 
 
 @import 'blocks/humburger/humburger';
+@import 'blocks/humburger/media';
 
 
 
 @import 'blocks/aside/aside';
+@import 'blocks/aside/media';
 
 
 @import 'blocks/nav/nav';
@@ -103,6 +106,7 @@ address {
 
 
 @import 'blocks/safety/safety';
+@import 'blocks/safety/media';
 
 
 @import 'blocks/dropdown/dropdown';
